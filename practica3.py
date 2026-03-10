@@ -44,8 +44,8 @@ class Lista_llamada:
         while actual.siguiente and (
             actual.siguiente.gravedad < nuevo.gravedad or
             (actual.siguiente.gravedad == nuevo.gravedad and actual.siguiente.prioridad < nuevo.prioridad)):
-            actual = actual.siguiente
-            pocision += 1
+             actual = actual.siguiente
+             pocision += 1
 
         nuevo.siguiente = actual.siguiente
         actual.siguiente = nuevo
@@ -158,6 +158,7 @@ while True:
         case 4:
             print("programa finalizado")
             break
+
 
 
 
